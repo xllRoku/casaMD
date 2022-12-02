@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,8 +25,199 @@
 .listado-nav li a:hover {
   border-bottom: 4px solid #ece0cd;
 }
+*/
 
-.container {
-  max-width: 1200px;
-  margin-inline: auto;
+.logo {
+  width: 6rem;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* colors -> https://coolors.co/e54b4b-ebebd3-464655-e4b363-e8e9eb */
+
+header {
+  color: #ebebd3;
+  padding: 1em 0;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.primary-navigation {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background: #ece0cd;
+  transition: clip-path ease-in-out 700ms;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 1;
+}
+
+.primary-navigation[data-state="opened"] {
+  animation: clipPathCircleOpen 750ms ease-in-out forwards;
+  display: block;
+}
+
+.primary-navigation[data-state="closing"] {
+  animation: clipPathCircleClose 750ms ease-in-out forwards;
+}
+.primary-navigation[data-state="closed"] {
+  display: none;
+}
+
+@media (min-width: 1020px) {
+  .primary-navigation {
+    position: initial;
+    background: none;
+  }
+
+  .primary-navigation[data-state="closed"] {
+    display: block;
+    display: flex;
+  }
+}
+
+@keyframes clipPathCircleOpen {
+  0% {
+    clip-path: circle(0% at top right);
+  }
+  100% {
+    clip-path: circle(250% at top right);
+  }
+}
+@keyframes clipPathCircleClose {
+  0% {
+    clip-path: circle(250% at top right);
+  }
+  100% {
+    clip-path: circle(0% at top right);
+  }
+}
+
+.sitve-nav {
+  width: 100%;
+}
+
+.site-nav li {
+  border-bottom: 1px solid #575766;
+}
+
+@media (min-width: 1020px) {
+  .site-nav li {
+    border-bottom: none;
+  }
+}
+
+.site-nav li:last-child {
+  border-bottom: none;
+}
+
+.site-nav a {
+  color: black;
+  display: block;
+  padding: 2em 4em 2em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (min-width: 1020px) {
+  .site-nav a {
+    color: black;
+    padding: 0;
+    font-weight: 500;
+  }
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: #e4b363;
+  color: #464655;
+}
+
+@media (min-width: 1020px) {
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: none;
+    border: none;
+  }
+}
+
+.site-nav--icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.menu-toggle {
+  padding: 1em;
+  background: transparent;
+  border: 0;
+  position: absolute;
+  top: 2.5em;
+  right: 0.5em;
+  cursor: pointer;
+}
+
+@media (min-width: 1020px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: #ebebd3;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+[aria-expanded="true"] .hamburger {
+  transform: rotate(45deg);
+}
+
+[aria-expanded="true"] .hamburger::before {
+  opacity: 0;
+}
+
+[aria-expanded="true"] .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

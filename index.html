@@ -12,17 +12,52 @@
   </head>
   <body>
     <header>
-      <nav class="nav container">
+      <div class="container-header container">
         <figure class="logo">
           <img src="/assets/images/logo.PNG" alt="logo" class="" />
         </figure>
+        <nav class="site-nav">
+          <button
+            class="menu-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="visually-hidden">Menu</span>
+            <div class="hamburger" aria-hidden="true"></div>
+          </button>
+
+          <ul
+            data-state="closed"
+            class="primary-navigation"
+            id="primary-navigation"
+          >
+            <li>
+              <a href=""><i class="fa fa-home site-nav--icon"></i>inicio</a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa fa-info site-nav--icon"></i>diseña con nosotros</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa fa-pencil site-nav--icon"></i>productos</a
+              >
+            </li>
+            <li>
+              <a href=""><i class="fa fa-usd site-nav--icon"></i>nosotros</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- <nav class="nav container">
         <ul class="listado-nav">
-          <li><a href="/index.html">inicio</a></li>
+          <li><a href="/index.html"></a></li>
           <li><a href="/pages/diseña-con-nosotros">diseña con nosotros</a></li>
           <li><a href="/pages/productos">productos</a></li>
           <li><a href="/pages/nosotoros">nosotros</a></li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
     <main>
       <section class="producto-uno">
@@ -45,5 +80,27 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-container container">
+        <div class="logo-footer-container">
+          <figure class="logo-footer">
+            <img src="/assets/images/logo.PNG" alt="logo" />
+          </figure>
+          <p>Somos Fabricantes Somos Diseñadores Somos Familia</p>
+        </div>
+        <nav class="nav-footer">
+          <ul class="listado-nav-footer">
+            <li><a href="#">e-mail</a></li>
+            <li><a href="#">servicios</a></li>
+            <li><a href="#">campaña</a></li>
+            <li><a href="#">nosotros</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="app/app.js" />
   </body>
 </html>
