@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/globals.css" />
     <link rel="stylesheet" href="styles/components/header.css" />
     <link rel="stylesheet" href="styles/components/footer.css" />
+    <link rel="stylesheet" href="styles/components/carousel.css" />
     <link rel="stylesheet" href="styles/pages/index.page.css" />
     <title>Casa MD</title>
   </head>
@@ -50,33 +51,34 @@
           </ul>
         </nav>
       </div>
-      <!-- <nav class="nav container">
-        <ul class="listado-nav">
-          <li><a href="/index.html"></a></li>
-          <li><a href="/pages/diseña-con-nosotros">diseña con nosotros</a></li>
-          <li><a href="/pages/productos">productos</a></li>
-          <li><a href="/pages/nosotoros">nosotros</a></li>
-        </ul>
-      </nav> -->
     </header>
     <main>
       <section class="producto-uno">
         <div class="producto-uno-container container">
-          <div class="container-imagenes">
-            <figure>
+          <div class="carousel">
+            <div class="carousel__item carousel__item--visible">
               <img
                 src="assets/images/WhatsApp Image 2022-11-30 at 9.47.57 AM.jpeg"
-                alt=""
               />
-            </figure>
-            <figure>
               <img
                 src="assets/images/WhatsApp Image 2022-11-30 at 9.47.57 AM (1).jpeg"
-                alt=""
               />
-            </figure>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="assets/images/WhatsApp Image 2022-11-30 at 9.47.57 AM (1).jpeg"
+              />
+            </div>
+
+            <h2>Interiorismo y Mobiliario Acero, Madera y Textil</h2>
           </div>
-          <h2>Interiorismo y Mobiliario Acero, Madera y Textil</h2>
+        </div>
+        <div class="carousel__actions">
+          <button
+            id="carousel__button--prev"
+            aria-label="Previous slide"
+          ></button>
+          <button id="carousel__button--next" aria-label="Next slide"></button>
         </div>
       </section>
     </main>
