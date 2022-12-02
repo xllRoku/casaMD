@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.listado-nav {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+.listado-nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.listado-nav li a:hover {
+  border-bottom: 4px solid #ece0cd;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
