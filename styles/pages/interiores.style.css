@@ -1,0 +1,24 @@
+.interiores h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.grilla-interiores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 2rem;
+}
+
+.carta {
+  width: 30rem;
+  height: 30rem;
+  margin-bottom: 5rem;
+}
+
+.carta p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}

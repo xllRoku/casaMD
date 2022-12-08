@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/globals.css" />
-    <link rel="stylesheet" href="styles/components/header.css" />
-    <link rel="stylesheet" href="styles/components/footer.css" />
-    <link rel="stylesheet" href="styles/components/carousel.css" />
-    <link rel="stylesheet" href="styles/pages/index.style.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/components/header.css" />
+    <link rel="stylesheet" href="../styles/components/footer.css" />
+    <link rel="stylesheet" href="../styles/components/carousel.css" />
+    <link
+      rel="stylesheet"
+      href="../styles/pages/diseña-con-nosotros.style.css"
+    />
     <title>Casa MD</title>
   </head>
   <body>
@@ -38,17 +41,17 @@
               >
             </li>
             <li>
-              <a href="/pages/diseña-con-nosotros.page.html"
+              <a href="diseña-con-nosotros.page.html"
                 ><i class="fa fa-info site-nav--icon"></i>diseña con nosotros</a
               >
             </li>
             <li>
-              <a href="/pages/productos.page.html"
+              <a href="productos.page.html"
                 ><i class="fa fa-pencil site-nav--icon"></i>productos</a
               >
             </li>
             <li>
-              <a href="pages/nosotros.page.html"
+              <a href="nosotros.page.html"
                 ><i class="fa fa-usd site-nav--icon"></i>nosotros</a
               >
             </li>
@@ -57,27 +60,42 @@
       </div>
     </header>
     <main>
-      <section class="producto-uno">
-        <div class="producto-uno-container container">
-          <div class="carousel">
-            <div class="carousel__item carousel__item--visible">
-              <img src="assets/images/imagen-una.jpeg" />
-              <img src="assets/images/imagen-dos.jpeg" />
+      <section class="formulario-contenedor container">
+        <h2>
+          Con casa MD, tienes la oportunidad de diseñar tu ambiente soñado.
+        </h2>
+        <div class="formulario">
+          <p>
+            Para ello hemos destinado un espacio donde podras contarnos sobre ti
+            y compartir ideas.
+          </p>
+          <form>
+            <div class="inputs">
+              <label>
+                <input type="text" placeholder="Nombres y apellidos" />
+              </label>
+              <label>
+                <input type="text" placeholder="Celular" />
+              </label>
+              <label>
+                <input type="email" placeholder="E-mail" />
+              </label>
             </div>
-            <div class="carousel__item">
-              <img src="assets/images/imagen-una.jpeg" />
-            </div>
-
-            <h2>Interiorismo y Mobiliario Acero, Madera y Textil</h2>
-          </div>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button type="submit" class="enviar">Enviar</button>
+          </form>
         </div>
-        <div class="carousel__actions">
-          <button
-            id="carousel__button--prev"
-            aria-label="Previous slide"
-          ></button>
-          <button id="carousel__button--next" aria-label="Next slide"></button>
-        </div>
+      </section>
+      <section class="tu-propio-diseño container">
+        <img src="../assets/images/imagen-tres.jpeg" alt="" />
+        <p>Además, puedes crear tu propio diseño en pasos muy cortos.</p>
+        <a href="nosotros-uno.html" class="click-aqui">¡Click Aqui!</a>
       </section>
     </main>
     <footer>

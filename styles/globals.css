@@ -32,3 +32,8 @@ figure {
     margin-inline: auto;
   }
 }
+
+main {
+  background-color: #f6f4e7;
+  padding: 6rem;
+}

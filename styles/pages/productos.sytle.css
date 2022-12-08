@@ -1,0 +1,25 @@
+main {
+  padding-block: 10rem;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  background: #ece0cd;
+  padding-block: 10rem;
+  border-radius: 20px;
+}
+
+.interiores,
+.exteriores {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+.interiores img,
+.exteriores img {
+  width: 30rem;
+}

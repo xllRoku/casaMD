@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/globals.css" />
-    <link rel="stylesheet" href="styles/components/header.css" />
-    <link rel="stylesheet" href="styles/components/footer.css" />
-    <link rel="stylesheet" href="styles/components/carousel.css" />
-    <link rel="stylesheet" href="styles/pages/index.style.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/components/header.css" />
+    <link rel="stylesheet" href="../styles/components/footer.css" />
+    <link rel="stylesheet" href="../styles/components/carousel.css" />
+    <link rel="stylesheet" href="../styles/pages/exteriores.style.css" />
     <title>Casa MD</title>
   </head>
   <body>
@@ -38,45 +38,38 @@
               >
             </li>
             <li>
-              <a href="/pages/diseña-con-nosotros.page.html"
+              <a href="diseña-con-nosotros.page.html"
                 ><i class="fa fa-info site-nav--icon"></i>diseña con nosotros</a
               >
             </li>
             <li>
-              <a href="/pages/productos.page.html"
+              <a href="productos.page.html"
                 ><i class="fa fa-pencil site-nav--icon"></i>productos</a
               >
             </li>
             <li>
-              <a href="pages/nosotros.page.html"
-                ><i class="fa fa-usd site-nav--icon"></i>nosotros</a
-              >
+              <a href=""><i class="fa fa-usd site-nav--icon"></i>nosotros</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="producto-uno">
-        <div class="producto-uno-container container">
-          <div class="carousel">
-            <div class="carousel__item carousel__item--visible">
-              <img src="assets/images/imagen-una.jpeg" />
-              <img src="assets/images/imagen-dos.jpeg" />
-            </div>
-            <div class="carousel__item">
-              <img src="assets/images/imagen-una.jpeg" />
-            </div>
-
-            <h2>Interiorismo y Mobiliario Acero, Madera y Textil</h2>
+      <section class="exteriores container">
+        <h2>exteriores</h2>
+        <div class="grilla-exteriores">
+          <div class="carta">
+            <img src="../assets/images/pergolas.jpeg" alt="" />
+            <p>portamacetas</p>
           </div>
-        </div>
-        <div class="carousel__actions">
-          <button
-            id="carousel__button--prev"
-            aria-label="Previous slide"
-          ></button>
-          <button id="carousel__button--next" aria-label="Next slide"></button>
+          <div class="carta">
+            <img src="../assets/images/cerramientos.jpeg" alt="" />
+            <p>sillas</p>
+          </div>
+          <div class="carta">
+            <img src="../assets/images/area-social.jpeg" alt="" />
+            <p>escritorios</p>
+          </div>
         </div>
       </section>
     </main>

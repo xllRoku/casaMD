@@ -1,0 +1,13 @@
+.nosotros {
+  background: #ece0cd;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.nosotros h2 {
+  text-transform: uppercase;
+}
+
+.nosotros p {
+  text-align: center;
+}
