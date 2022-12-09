@@ -1,3 +1,7 @@
+main {
+  padding: 0;
+}
+
 .producto-uno {
   background-color: #f6f4e7;
   height: 100vh;
@@ -64,17 +68,5 @@
 @media (min-width: 1020px) {
   .container-imagenes figure {
     width: 250px;
-  }
-}
-
-.producto-uno-container h2 {
-  font-size: 2rem;
-  text-align: center;
-}
-
-@media (min-width: 1020px) {
-  .producto-uno-container h2 {
-    font-size: 3.5rem;
-    text-align: center;
   }
 }
