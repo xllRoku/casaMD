@@ -11,3 +11,26 @@
 .nosotros p {
   text-align: center;
 }
+
+.equipo-trabajo {
+  margin-top: 5rem;
+}
+
+.integrantes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.integrante img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100vh;
+  border: 5px solid white;
+}
+
+.integrante p {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
