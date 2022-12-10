@@ -33,11 +33,13 @@ document
   .getElementById("carousel__button--next")
   .addEventListener("click", function () {
     moveToNextSlide();
+    console.log("is clicking");
   });
 document
   .getElementById("carousel__button--prev")
   .addEventListener("click", function () {
     moveToPrevSlide();
+    console.log("is clicking");
   });
 
 function updateSlidePosition() {
