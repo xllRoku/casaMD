@@ -41,8 +41,7 @@ main {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-block: 4rem;
-    margin-block: 2rem;
+    padding-block: 2rem;
   }
 }
 
